@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, purple, rgb(216, 94, 181), purple);
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;   
+    gap:20px
+}
+
+.answer{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    width: 50em;
+    height: 20em;
+    margin-top: 30px;
+}
+
+.parrafo{
+    font-family: cursive;
+    color: azure;
+    font-size: 5em;
+}
+
+.textarea{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    width: 60em;
+    height: 10em;
+}
+
+#texto{
+   border: 2px salmon solid;
+   border-radius: 1em;
+   font-family: cursive;
+}
+
+.botones{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.boton{
+    width: 10em;
+    height: 3em;
+    background-color: white;
+    border: salmon 2px solid;
+    border-radius: 1em;
+}
