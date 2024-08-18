@@ -9,17 +9,14 @@ click.addEventListener('click',answer)
 function answer(){
     if (nombre == ''){
         nombre = document.getElementById('texto').value;
-        console.log(`nombre = ${nombre}`);
         document.getElementById('parrafo').innerText = "¿Cuántos años tienes?";
         document.getElementById('texto').value = "";
     } else if (edad <= 0){
         edad = document.getElementById('texto').value;
-        console.log(`edad = ${edad}`);
         document.getElementById('parrafo').innerText = "¿Qué lenguaje de programación estás estudiando?";
         document.getElementById('texto').value = "";
     } else if (language == ''){
         language = document.getElementById('texto').value;
-        console.log(`lenguaje = ${language}`);
         document.getElementById('texto').value = "";
         document.getElementById('parrafo').innerText = `Hola ${nombre}, tienes ${edad} años y ya estás aprendiendo ${language}! ¿Te gusta estudiar ${language}? Responde con el número 1 para SÍ o 2 para NO.`;
         
