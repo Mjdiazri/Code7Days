@@ -8,7 +8,7 @@ const listas = [fruit, candy, dairy, meat];
 function listaCompras(){
     while (parseInt(decision) === 1 ){
         let  nuevoProducto = prompt('Escribe el nombre del producto que quieras agregar (Por favor ingresa el texto en minuscula');
-        let categoria = prompt ('A que categoria quieres agregar el producto: fruit, candy, dairy, meat');
+        let categoria = prompt ('A que categoria quieres agregar el producto: fruit🍉, candy🍩, dairy🥛, meat🍖');
         agregar(nuevoProducto, categoria);
         decision = prompt('Quieres ingresar un nuevo producto a tu lista? (ingresa 1 para "si" y  2 para "no")');
         if (parseInt(decision) === 2) {
@@ -78,9 +78,8 @@ function eliminar(){
     while (parseInt(decision)===2){
         let productoEliminar = prompt('Escribe el nombre del producto que quieres eliminar (Recuerda ingresar el texto en minuscula)');
         for (const array of listas) {
-            if (array.indexOf(productoEliminar)){
-                
-            }
+            let indice = array.indexOf(productoEliminar);
+            array.splice(indice,1);
         }
     }
 }
